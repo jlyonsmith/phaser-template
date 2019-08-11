@@ -1,9 +1,9 @@
-import Phaser from 'phaser'
+import Phaser from "phaser"
 
 export default {
   type: Phaser.AUTO,
-  parent: 'content',
+  parent: "content",
   width: 800,
   height: 600,
-  localStorageName: 'phaseres6webpack'
+  localStorageName: "phaseres6webpack",
 }

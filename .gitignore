@@ -1,9 +1,12 @@
+# Node.js
 node_modules/
-www/
-platforms/
-plugins/
+
+# Builds
 dist/
-.vscode/
-*.log
-/index.html
 build/
+
+# Editor
+.vscode/
+
+# Logs
+*.log
