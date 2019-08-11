@@ -1,6 +1,8 @@
 import Phaser from "phaser"
 import WebFont from "webfontloader"
+import autobind from "autobind-decorator"
 
+@autobind
 export default class extends Phaser.Scene {
   constructor() {
     super({ key: "BootScene" })
@@ -8,11 +10,11 @@ export default class extends Phaser.Scene {
 
   preload() {
     this.fontsReady = false
-    this.fontsLoaded = this.fontsLoaded.bind(this)
-    this.add.text(100, 100, "loading fonts...")
 
-    this.load.image("loaderBg", "./assets/images/loader-bg.png")
-    this.load.image("loaderBar", "./assets/images/loader-bar.png")
+    this.add.text(100, 100, "loading fonts...")
+    this.load.image("loaderBg", "src/assets/images/loader-bg.png")
+    this.load.image("loaderBar", "src/assets/images/loader-bar.png")
+    this.load.image("mushroom", "src/assets/images/mushroom2.png")
 
     WebFont.load({
       google: {
@@ -24,7 +26,7 @@ export default class extends Phaser.Scene {
 
   update() {
     if (this.fontsReady) {
-      this.scene.start("SplashScene")
+      this.scene.start("GameScene")
     }
   }
 
