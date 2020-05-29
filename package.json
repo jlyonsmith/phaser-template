@@ -2,13 +2,13 @@
   "name": "phaser-template",
   "version": "1.0.0",
   "description": "A project template for Phaser 3 games",
-  "author": "John Lyon-Smith <john@lyon-smith.org>",
+  "author": "Some User <some-user@some.domain>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jlyonsmith/phaser-template.git"
+    "url": "git+https://github.com/some-user/phaser-template.git"
   },
   "bugs": {
-    "url": "https://github.com/jlyonsmith/phaser-template/issues"
+    "url": "https://github.com/some-user/phaser-template/issues"
   },
   "main": "src/index.js",
   "scripts": {
@@ -16,19 +16,20 @@
     "start": "webpack-dev-server --config webpack/base.js --open"
   },
   "license": "UNLICENSED",
+  "homepage": "https://github.com/some-user/phaser-template#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-decorators": "^7.8.3",
-    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-decorators": "^7.10.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.1",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-env": "^7.10.1",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "raw-loader": "^4.0.1",
-    "terser-webpack-plugin": "^3.0.1",
+    "terser-webpack-plugin": "^3.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
